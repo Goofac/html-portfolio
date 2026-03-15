@@ -1,0 +1,40 @@
+.body{
+    background: #fff;
+    color: purple;
+    font-style: italic;
+    text-align: left;
+    
+    ;
+}
+   .g{
+    text-align: center;
+    text-decoration: underline;
+    background: purple;
+    color: #fff;
+}
+
+   .i{
+    text-align: center;
+    background: purple;
+    color: #fff
+    
+}
+.m{
+    border-radius:;
+    border-style: double;
+    
+}
+.b{
+    border-radius: ;
+    border-style: double;
+}
+.about{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    
+}
+.foot{
+    text-align: center;
+}
