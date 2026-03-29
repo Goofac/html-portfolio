@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>My Portfolio</title>
-    </head>
-    <body class="body">
-        <h1 class="g">Goofac's Portfolio</h1>
-        <h2 class="i">I'm a Developer</h2>
-        <hr>
-        <a href="./Public/movie ranking.html"><h3>Movie Ranking Projec</h3></a> 
-        <img class="m" src="./Images/movie.png" width="250" height="300" alt="screenshot of movies"> <br> <br>
-        <a href="./Public/birthday invite.html"><h3>Birthday Invite Project</h3></a>
-        <img class="b" src="./Images/birth.png" width="300" height="200" alt="screenshot of a birthday invite">
-        <br> <br>
-        <hr>
-        
 
-        <a href="./Public/about.html">About me</a> 
-        |
-        <a class="contact" href="./Public/contact.html">Contact me</a><hr> <br>
-        <footer class="foot">
-            Copyright 2026 Francis anthony, All rights reserved. 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Grid</title>
+  
+</head>
+
+<body id="portfolio">
+  <div class="grid-container">
+    <div class="first card">
+        <a href="./Public/about.html">About Me</a> |
+        <a href="./Public/contact.html">Contact Me</a> |
+        <a href="./Public/movie ranking.html">Movie Project</a> |
+        <a href="./Public/birthday invite.html">Birthday Project</a> |
+        <a href="./Public/resume.html">My Resume</a> |
+        <a href="./Public/hobbies.html">My Hobbies</a> <br>
+        <h1><span id="wel">Welcome</span> <span id="to">to my</span> <span id="por">Portfolio.</span></h1>
+        
+        <h2>I'm an upcoming Fullstack Dev.<h2>
+    </div>
+    <div class="second card">
+        <img src="./Images/me.png" alt="a picture of goofac">
+        <p>I'm Francis Anthony aka (Goofac), 
+        I'm a passionate upcoming fullstack web
+        developer. <br> I'm currently learning frontend web development and I'm open to new ideas <br> and collaboration on new projects. you're welcome to bring in <br> whatever ideas you've got let's learn and grow together.</p>
+        
+    </div>
+    <div class="third card">
+        <footer id="footer">
+            ©️ Francis Anthony.All rights reserved.
         </footer>
-    </body>
+    </div>
+  </div>
+
+</body>
+
 </html>

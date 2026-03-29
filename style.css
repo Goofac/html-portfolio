@@ -1,40 +1,374 @@
-.body{
-    background: #fff;
-    color: purple;
-    font-style: italic;
-    text-align: left;
-    
-    ;
-}
-   .g{
-    text-align: center;
-    text-decoration: underline;
-    background: purple;
-    color: #fff;
+#portfolio{
+    background: black;
+    .grid-container {
+        display: grid;
+        background: bla;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        text-align: center ;
+      }
+  
+      .first {
+        grid-column: span 2;
+        height: 400px;
+      }
+      .second{
+          grid-column: span 2;
+          height: 550px;
+      }
+       img{
+          width: 250px;
+          height: ;
+          margin-top: 10px;
+          border-radius: 150px;
+          border: 5px solid blue;
+      }
+      .third{
+          grid-column: span 2;
+          height: 20px;
+      }
+      h1{
+          font-size: 5rem;
+          color: #7a00ff;
+      }
+      h2{
+          font-size: 3em;
+          color: wheat;
+      }
+      p{
+          color: wheat;
+          font-style: italic;
+      }
+      #footer{
+          color: wheat;
+      }
+      #wel{
+          color: blue;
+      }
+      #to{
+          color: #8f00ff;
+      }
+      #por{
+          color: #e300ff;
+      }
+      a{
+          font-size: 1.5em;
+          background: wheat;
+      }
 }
 
-   .i{
-    text-align: center;
-    background: purple;
-    color: #fff
+    #contact {
+        background: rgb(250, 128, 128);
+         .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 100%;
+          }
+            .first {
+            grid-column: span 2;
+          }
+           p{
+            font-size: 2em;
+          }
+           h1 {
+            text-align: center;
+            color: blueviolet;
+            font-size: 5rem;
+          }
+           a{
+            background-color: transparent;
+            font-size: 2.5rem;
+          }
+      }
+      
+
+    #resume{
+        background: skyblue;
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 710px;
+            gap: 10px;
+            
+        }
+        .card{
+            background: skyblue;
+        }
+        .first{
+            grid-column: span 2;
+            text-align: center;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: left;
+        }
+        ul{
+            text-align: left;
+        }
+        p{
+            text-align: center;
+        }
+        #me{
+            width: 150px;
+            height: 200px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+
+    #about{
+        .main{
+           display: grid;
+           grid-template-columns: 1fr; 
+           grid-template-rows: 100%;
+        }
+        .first{
+            grid-column: span 2;
+            text-align: center;
+            font-size: large;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        h2{
+            font-size: 2em;
+        }
+        p{
+            font-style: italic;
+            font-size: 1.5em;
+        }
+        img{
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .card{
+            background: #e300ff;
+            border-radius: 15px;
+        }
+    }
+
+    #birthday{
+        background: #fff;
+        .main{
+            display: grid;
+            height: 100vh;
+        }  
+        .first{
+            grid-column: span 2;
+            background: rgb(15, 228, 228);
+            border-radius: 10px; 
+        }
+        .cake{
+            width: 400px;
+            height: 200px;
+           justify-self: center;
+        }
+        h1{
+            font-size: 5rem;
+            text-align: center;
+        }
+        h2{
+            font-size: 3em;
+            text-align: center;
+        }
+        h3{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        ul{ 
+            font-size: larger;
+            justify-self: center;
+        }
+        a{
+            font-size: larger;
+        }
+    }
+
+    #movie{
+        
+        .main{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+        .first{
+            height: 100%;
+            grid-column: span 2;
+            background: pink;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 3rem;
+            text-align: center;
+        }
+        ul{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        a{
+            font-size: 0.7em;
+        }
+    }
+
+    #hobby{
+         .main{
+            display: grid;
+            grid-template-columns: 1fr;
+         }
+         .first{
+             background: palevioletred;
+             grid-column: span 2;
+             height: 100vh;
+             border-radius: 10px;
+         }
+         h1{
+             text-align: center;
+             font-size: 5rem; 
+         }
+         ul{
+            font-size: 2.5em;
+         }
+    }
+    @media (max-width: 680px) {
+       #portfolio{
+         h1{
+        font-size: 1.9rem;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    a{
+        font-size: 0.60em;
+        background: wheat;
+    }
+    .first{
+        height: 150px;
+    }
+    .second{
+        height: 400px;
+    }
+    .second img{
+        width: 150px;
+        height: 200px;
+        border: 2px solid blue;
+    }
+    .third{
+        margin-top: 60px;
+    }
+       }
+       
+       #contact{
+         a{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1.3em;
+        }
+        h1{
+            font-size: 3em;
+        }
+       }
+
+       #resume{
+        #me{
+            width: 50px;
+            height: 70px;
+            text-align: center;
+            border-radius: 50%;
+        }
+       }
+
+       #about{
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1em;
+        }
+        .main{
+            height: 100vh;
+        }
+        img{
+            width: 100px;
+            height: 150px;
+        }
+       }
+
+       #birthday{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2em;
+        }
+        .cake{
+            width: 200px;
+            height: 100px;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+       }
+
+       #movie{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        ul{
+            font-size: 1em;
+        }
+       }
+
+       #hobby{
+        h1{
+            font-size: 2.5rem;
+        }
+        ul{
+            font-size: 1.3em;
+        }
+       }
+
+        
+    }
     
-}
-.m{
-    border-radius:;
-    border-style: double;
-    
-}
-.b{
-    border-radius: ;
-    border-style: double;
-}
-.about{
-    text-align: center;
-}
-.contact{
-    text-align: center;
-    
-}
-.foot{
-    text-align: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
